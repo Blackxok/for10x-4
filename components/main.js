@@ -7,7 +7,7 @@ btn.addEventListener('click', () => {
 
     let speech = new SpeechSynthesisUtterance();
 
-    speech.lang = 'uz';
+    speech.lang = 'en-US';
     speech.rate = speed.value;
     speech.pitch = pitch.value;
     speech.volume = 1;
@@ -15,3 +15,5 @@ btn.addEventListener('click', () => {
 
     speechSynthesis.speak(speech);
 })
+
+// Ozbekcha gapirtiromadik lekin uzur! :(
