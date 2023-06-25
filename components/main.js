@@ -4,4 +4,14 @@ let btn = document.getElementById('btn');
 btn.addEventListener('click', () => {
     let speed = document.getElementById('speed');
     let pitch = document.getElementById('pitch');
+
+    let speech = new SpeechSynthesisUtterance();
+
+    speech.lang = 'uz';
+    speech.rate = speed.value;
+    speech.pitch = pitch.value;
+    speech.volume = 1;
+    speech.text = text.value;
+
+    speechSynthesis.speak(speech);
 })
